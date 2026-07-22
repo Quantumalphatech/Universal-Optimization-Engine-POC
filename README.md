@@ -1,6 +1,6 @@
 # Universal Optimization Engine (QαT) - POC v1.0
 
-**Company:** Quantum Alpha Technology Co., Ltd.**Author:** Jahua Chang**Release Date:** July 19, 2026**Status:** Public Proof of Concept Release
+**Company:** Quantum Alpha Technology Co., Ltd.**Author:** Jahua Chang **Release Date:** July 19, 2026**Status:** Public Proof of Concept Release
 
 ## Project Overview
 
