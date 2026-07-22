@@ -1,0 +1,43 @@
+{
+    "executive_summary": {
+        "task_type": "post_quantum_crypto",
+        "status": "✅ SOLVED",
+        "true_conflicts": 0,
+        "key_finding": "後量子密碼學完成。最佳值 20425074.12，衝突 0。安全等級高。",
+        "verification": "✅ true_conflicts=0, ✅ Ed25519 signature valid"
+    },
+    "task_type": "post_quantum_crypto",
+    "best_value": 20425074.12,
+    "raw_best_fitness": 20425074.12087224,
+    "true_conflicts": 0,
+    "poc_time_seconds": 54.848,
+    "interpretation": "後量子密碼學完成。最佳值 20425074.12，衝突 0。安全等級高。",
+    "interpretation_en": "Post-Quantum Crypto completed. Best value: 20425074.12. Conflicts: 0. Security level: High.",
+    "quality_rating": "良好",
+    "watermark": "Quantum Alpha Technology Co., Ltd.",
+    "digital_signature": "Jahua Chang",
+    "timestamp": "2026-07-22T16:50:13.384994",
+    "solution_bin_file": "solution_post_quantum_crypto_2048bit_seed42.bin",
+    "solution_npy_file": "solution_post_quantum_crypto_2048bit_seed42.npy",
+    "solution_perm_file": null,
+    "format_note": "solution.bin / .npy 為長度 = 2048 的 int8 陣列（edge selection encoding，每個元素 0 或 1）。非 bit-packed 格式。檔案大小 ≈ 2048 bytes。",
+    "verification_guidance": "使用 SHA-256 檢查 solution_*.bin 內容完整性；使用公開包 public_key.pem + signature 做 Ed25519 真偽驗證。私鑰僅由 Quantum Alpha Technology Co., Ltd. 持有。",
+    "verification_report_file": "verification_report_post_quantum_crypto_2048bit_seed42.json",
+    "sha256_hash": "0757992de4cc065992e9eff8e868f27660e211883fa44350ed0669d30a597c91",
+    "signature_scheme": "Ed25519",
+    "public_key_id": "qat-poc-ed25519-v1",
+    "public_key_file": "public_key.pem",
+    "signature": "K8DkuJtD2xEV8o7TeKJzOmc5tgUuwu2IIM0JJSkh594Ik0YRmQZoXz2N6Aq2HLXYD9aHI5Eye808KCQ4SqSgAA==",
+    "signed_artifact": "solution_post_quantum_crypto_2048bit_seed42.bin",
+    "hmac_signature": "cb60a68200f4b91c8820c4a9cf006fe1a04a62f0dcedd952e609c54dd5f23096",
+    "human_readable_summary": {
+        "task_type": "post_quantum_crypto",
+        "n_bits": 2048,
+        "interpretation": "後量子密碼學完成。最佳值 20425074.12，衝突 0。安全等級高。",
+        "interpretation_en": "Post-Quantum Crypto completed. Best value: 20425074.12. Conflicts: 0. Security level: High.",
+        "quality_rating": "良好",
+        "best_value": 20425074.12,
+        "true_conflicts": 0
+    },
+    "note": "Quantum Alpha Technology Co., Ltd. Algorithm POC true_conflicts 已正確處理。本結果為演化式演算法在特定問題模型上的求解表現，非與商用求解器之嚴謹性能比較。"
+}
