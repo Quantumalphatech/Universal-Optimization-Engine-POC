@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-This is a **compact, low-resource universal optimization engine** capable of handling a wide range of combinatorial and engineering optimization problems using a single core architecture.
+This is a **compact, low-resource universal optimizer** for NP-hard combinatorial and engineering optimization problems using a single core architecture.
 
 Key design principles:
 
@@ -113,7 +113,7 @@ Email: jahua@quantum-alpha.tech
 
 ## 項目概述
 
-這是一個**精簡、低資源的通用優化引擎**，能夠以單一核心架構處理多種組合優化與工程問題。
+這是一個**精簡、低資源的通用優化引擎**，專注解決 NP-hard 組合優化與工程問題，使用單一核心架構。
 
 核心設計原則：
 
