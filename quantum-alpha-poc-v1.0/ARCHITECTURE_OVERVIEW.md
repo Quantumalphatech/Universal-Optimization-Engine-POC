@@ -35,7 +35,7 @@ This layered design enables the same core to handle 46+ diverse tasks while keep
 The architecture is intentionally designed with future hardware (FPGA / ASIC / logic circuit) acceleration in mind:
 
 - **Compact codebase** (~10,000 lines): Naturally concise structure significantly easier to audit, optimize, and translate into hardware.
-- **Binary-native representation**: Core operations use simple selection encoding that maps naturally to digital logic.
+- **Binary solution encoding**: Core operations use simple selection encoding (edge/node selection) that maps naturally toward digital logic.
 - **Rule-based evaluation**: Local constraint checking structure is well-suited for future hardware parallelization.
 - **Deterministic core**: Fixed-seed execution eliminates randomness issues common in hardware.
 - **Built-in feasibility protection**: Hard constraint satisfaction (`true_conflicts = 0`) can be realized as dedicated hardware checkers.
@@ -53,7 +53,7 @@ Compared to mathematical programming solvers that rely on complex floating-point
 | **Verifiability**              | Cryptographic signatures per result | Usually no built-in digital signature         |
 | **Reproducibility**            | 100% deterministic (fixed seed)     | Often non-deterministic or timing dependent   |
 | **Task Switching**             | Same core, 46+ tasks                | Usually problem-specific modeling             |
-| **Hardware Acceleration Path** | High (binary + rule-based)          | Low (complex mathematical iterations)         |
+| **Hardware Acceleration Path** | High (binary solution encoding + rule-based)   | Low (complex mathematical iterations)         |
 
 **Key Differentiation**:  
 QαT provides a **unified, compact, low-power, verifiable, and hardware-friendly** optimization framework that can be rapidly adapted across many problem domains.
@@ -99,7 +99,7 @@ QαT provides a **unified, compact, low-power, verifiable, and hardware-friendly
 本架構從設計之初就考慮到未來硬體加速（FPGA / ASIC / 邏輯電路）的可行性：
 
 - **精簡程式碼規模**（約 10,000 行）：自然形成的精簡結構，大幅降低審核、優化與硬體轉譯難度。
-- **二進位原生表達**：核心操作使用簡單的選擇編碼，極易對應到數字邏輯。
+- **二進位解編碼**：核心操作使用簡單的選擇編碼（edge/node selection），便於對應到數字邏輯。
 - **規則導向評估**：局部約束檢查結構適合未來硬體並行化實作。
 - **確定性核心**：固定 Seed 消除硬體常見的隨機性問題。
 - **內建可行性保護**：硬性約束滿足（`true_conflicts = 0`）可實作為專用硬體檢查器。
@@ -117,7 +117,7 @@ QαT provides a **unified, compact, low-power, verifiable, and hardware-friendly
 | **可驗證性**   | 每個結果皆有數位簽章              | 通常無內建數位簽章                    |
 | **可重現性**   | 100% 確定性（固定 Seed）       | 常有隨機性或時序依賴                   |
 | **任務切換**   | 同一核心支援 46+ 任務           | 通常需針對問題重新建模                  |
-| **硬體加速潛力** | 高（二進位 + 規則導向）           | 低（複雜數學迭代）                    |
+| **硬體加速潛力** | 高（二進制解編碼 + 基於規則）      | 低（複雜數學迭代）                    |
 
 **核心差異化**：  
 QαT 提供一個**統一、精簡、低功耗、可驗證、且適合硬體加速**的優化框架，能快速適應多種問題領域。
