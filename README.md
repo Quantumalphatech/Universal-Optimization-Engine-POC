@@ -85,6 +85,19 @@ All results are cryptographically signed and independently verifiable:
 
 See `VERIFICATION_GUIDE.md` for complete instructions.
 
+## 📺 Real-Time Execution Demo
+
+Watch unedited 14-minute single-core execution of SteinLib B01 
+(.stp & .json formats):
+
+[
+
+![QαT Engine Real-Time Benchmark](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
+
+](https://youtu.be/vsg6ljJ2U2M)
+
+*Single-core CPU monitoring, execution logs, and Ed25519 verified output shown in real time.*
+
 ## Contact Information
 
 **Quantum Alpha Technology Co., Ltd.**Technical Contact: Jahua ChangEmail: jahua@quantum-alpha.tech
@@ -183,6 +196,20 @@ See `VERIFICATION_GUIDE.md` for complete instructions.
 * 內建一鍵 GUI 驗證工具
 
 詳細說明請參考 `VERIFICATION_GUIDE.md`。
+
+## 📺 即時執行演示
+
+觀看未經剪輯的 14 分鐘單核心 SteinLib B01 執行演示
+
+（.stp 和 .json 格式）：
+
+[
+
+![QαT 引擎即時基準測試](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
+
+](https://youtu.be/vsg6ljJ2U2M)
+
+*即時顯示單核心 CPU 監控、執行日誌以及 Ed25519 驗證的輸出結果。 *
 
 ## 聯絡資訊
 
