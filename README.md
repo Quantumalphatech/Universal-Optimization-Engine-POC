@@ -103,7 +103,7 @@ Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json for
 
 [
 
-![QαT Engine RealTime Benchmark](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
+[QαT Engine RealTime Benchmark](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
 
 ](https://youtu.be/vsg6ljJ2U2M)
 
@@ -230,7 +230,7 @@ QαT 從設計之初即以未來硬體對應為目標。約 10,000 行的精簡�
 
 [
 
-![QαT 引擎即時基準測試](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
+[QαT 引擎即時基準測試](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
 
 ](https://youtu.be/vsg6ljJ2U2M)
 
