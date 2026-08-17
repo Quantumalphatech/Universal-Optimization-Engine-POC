@@ -97,7 +97,7 @@ All results are cryptographically signed and independently verifiable:
 
 See `VERIFICATION_GUIDE.md` for complete instructions.
 
-## ## 📺 Real-Time Execution Demo
+## 📺 Real-Time Execution Demo
 
 Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json formats):
 
