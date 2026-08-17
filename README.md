@@ -46,6 +46,18 @@ All solutions are **feasible within their respective problem models** (`true_con
 
 The engine runs efficiently on standard consumer laptops.
 
+## Development & Runtime Environment
+
+The current POC is implemented as a **pure, self-developed Python** stack and runs on **consumer-grade single-core CPUs with <6GB RAM**.
+
+Its core development and execution flow does not rely on GPU acceleration, commercial EDA toolchains, or third-party cloud platforms as part of the core toolchain. Full verification can be completed on a consumer-grade standalone machine.
+
+## Hardware Orientation
+
+QαT was designed from the outset with future hardware mapping in mind.The compact ~10,000-line structure, binary solution encoding, and deterministic rule-based evaluation are intentionally chosen to facilitate potential translation into logic circuits or dedicated accelerators (FPGA / ASIC).
+
+This POC demonstrates that a wide range of NP-hard problem structures can be handled under strict single-core and low-memory constraints — a necessary foundation for exploring GPU-free, edge-oriented optimization hardware.
+
 ## Supported Tasks (46+)
 
 The engine currently supports 46 problem types across multiple domains:
@@ -87,12 +99,11 @@ See `VERIFICATION_GUIDE.md` for complete instructions.
 
 ## 📺 Real-Time Execution Demo
 
-Watch unedited 14-minute single-core execution of SteinLib B01 
-(.stp & .json formats):
+Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json formats):
 
 [
 
-![QαT Engine Real-Time Benchmark](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
+![QαT Engine RealTime Benchmark](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
 
 ](https://youtu.be/vsg6ljJ2U2M)
 
@@ -100,11 +111,13 @@ Watch unedited 14-minute single-core execution of SteinLib B01
 
 ## Contact Information
 
-**Quantum Alpha Technology Co., Ltd.**Technical Contact: Jahua ChangEmail: jahua@quantum-alpha.tech
+**Company:** Quantum Alpha Technology Co., Ltd.**Author:** Jahua Chang**Release Date:** July 19, 2026**Status:** Public Proof of Concept Release
+
+Email: jahua@quantum-alpha.tech
 
 * * *
 
-**License**: Evaluation and research use only. Core algorithm protected as trade secret.**Repository**: [GitHub link will be added upon release]
+**License**: Evaluation and research use only. Core algorithm protected as trade secret.**Repository**: [[GitHub - Quantumalphatech/Universal-Optimization-Engine-POC: Proof of Concept — Universal Optimization Engine (QαT) · GitHub](https://github.com/Quantumalphatech/Universal-Optimization-Engine-POC)]
 
 * * *
 
@@ -158,6 +171,18 @@ Watch unedited 14-minute single-core execution of SteinLib B01
 
 引擎可在一般消費級筆電上高效運行。
 
+## 開發與執行環境
+
+目前 POC 以**純 Python 自研**實作，並在**消費級單核 CPU、<6GB 記憶體**環境下執行。
+
+核心開發與執行流程不依賴 GPU 加速、商業 EDA 工具鏈，或第三方雲端平台作為核心工具鏈。全部驗證可在消費級單機環境完成。
+
+## 硬體導向設計
+
+QαT 從設計之初即以未來硬體對應為目標。約 10,000 行的精簡結構、二進位解編碼，以及確定性的規則導向評估，都是為了讓後續轉換成邏輯電路或專用加速器（FPGA / ASIC）更為可行。
+
+本 POC 證明了在嚴格的單核與低記憶體限制下，仍可處理多種 NP-hard 問題結構——這是探索無 GPU、面向邊緣裝置的優化硬體時，必要的軟體基礎。
+
 ## 支援任務列表（46+）
 
 目前已支援 46 種問題類型，涵蓋多個領域：
@@ -205,7 +230,7 @@ Watch unedited 14-minute single-core execution of SteinLib B01
 
 [
 
-![QαT 引擎即時基準測試](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
+![QαT 引擎即時基準測試](https://img.youtube.com/vi/vsg6ljJ2U2M/0.jpg)
 
 ](https://youtu.be/vsg6ljJ2U2M)
 
@@ -213,11 +238,19 @@ Watch unedited 14-minute single-core execution of SteinLib B01
 
 ## 聯絡資訊
 
-**量子阿爾法科技有限公司**技術聯絡人：張家華（Jahua Chang）Email: jahua@quantum-alpha.tech
+**公司:量子阿爾法科技有限公司**
+
+**技術聯絡人**：張家華（Jahua Chang）
+
+**Release Date:** July 19, 2026
+
+**Status:** Public Proof of Concept Release
+
+Email: jahua@quantum-alpha.tech
 
 * * *
 
-**授權方式**：評估與研究用途。核心演算法為商業機密。**儲存庫**：發布後將提供 GitHub 連結
+**授權方式**：評估與研究用途。核心演算法為商業機密。**儲存庫**：[GitHub - Quantumalphatech/Universal-Optimization-Engine-POC: Proof of Concept — Universal Optimization Engine (QαT) · GitHub](https://github.com/Quantumalphatech/Universal-Optimization-Engine-POC)
 
 * * *
 
