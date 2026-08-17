@@ -111,9 +111,11 @@ Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json for
 
 ## Contact Information
 
-**Company:** Quantum Alpha Technology Co., Ltd.**Author:** Jahua Chang**Release Date:** July 19, 2026**Status:** Public Proof of Concept Release
-
-Email: jahua@quantum-alpha.tech
+**Company:** Quantum Alpha Technology Co., Ltd.
+**Author:** Jahua Chang
+**Release Date:** July 19, 2026
+**Status:** Public Proof of Concept Release
+**Email:** jahua@quantum-alpha.tech
 
 * * *
 
@@ -246,7 +248,7 @@ QαT 從設計之初即以未來硬體對應為目標。約 10,000 行的精簡�
 
 **Status:** Public Proof of Concept Release
 
-Email: jahua@quantum-alpha.tech
+**Email:** jahua@quantum-alpha.tech
 
 * * *
 
