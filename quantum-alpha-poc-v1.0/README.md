@@ -1,6 +1,9 @@
 # Universal Optimization Engine (QαT) - POC v1.0
 
-**Company:** Quantum Alpha Technology Co., Ltd.**Author:** Jahua Chang **Release Date:** July 19, 2026**Status:** Public Proof of Concept Release
+**Company:** Quantum Alpha Technology Co., Ltd.
+**Author:** Jahua Chang 
+**Release Date:** July 19, 2026
+**Status:** Public Proof of Concept Release
 
 ## Project Overview
 
@@ -22,7 +25,7 @@ The entire engine naturally evolved to approximately **10,000 lines** during dev
   * Specifically: B03 (25 terminals), B08 (19 terminals), B09 (38 terminals), and B18 (50 terminals) all hit the official optimal solutions in the international standard test
   * Strong performance on high terminal density instances (e.g. C05 +2.4%, C10 +3.5%)
 * **Multi-mode Architecture**: Single core supports Minimization, Maximization, and Balance modes
-* **Problem Coverage**: 46+ diverse optimization tasks
+* **Problem Coverage**: 47+ diverse optimization tasks — the current count reflects validation effort, not architectural capacity
 * **Resource Efficiency**: Single-core, low power consumption, <6GB memory
 * **Verifiability**: Every solution includes SHA-256 + Ed25519 digital signature
 * **Reproducibility**: 100% deterministic with fixed Seed=42
@@ -54,13 +57,13 @@ Its core development and execution flow does not rely on GPU acceleration, comme
 
 ## Hardware Orientation
 
-QαT was designed from the outset with future hardware mapping in mind.The compact ~10,000-line structure, binary solution encoding, and deterministic rule-based evaluation are intentionally chosen to facilitate potential translation into logic circuits or dedicated accelerators (FPGA / ASIC).
+QαT was designed from the outset with future hardware mapping in mind. The compact ~10,000-line structure, binary solution encoding, and deterministic rule-based evaluation are intentionally chosen to facilitate potential translation into logic circuits or dedicated accelerators (FPGA / ASIC).
 
 This POC demonstrates that a wide range of NP-hard problem structures can be handled under strict single-core and low-memory constraints — a necessary foundation for exploring GPU-free, edge-oriented optimization hardware.
 
-## Supported Tasks (46+)
+## Supported Tasks (47+)
 
-The engine currently supports 46 problem types across multiple domains:
+The engine currently supports 47+ problem types across multiple domains. The current count reflects validation coverage, not the architectural limit of the engine. New task types can be added via modular structure design without rewriting the core.
 
 **Tasks with established full verification pipeline**:
 
@@ -74,6 +77,7 @@ The engine currently supports 46 problem types across multiple domains:
 * Combinatorial Optimization (TSP, Knapsack, Job Shop, Cutting Stock, VRP, QAP)
 * Network & Routing (Network Topology, Supply Chain, Smart Grid)
 * Engineering Applications (Robot Kinematics, Thermal Dissipation)
+* Autonomous Systems (Emergency motion planning under dynamic constraints)
 * Emerging Fields (Zero-Knowledge Proof Circuit, Post-Quantum Crypto, etc.)
 
 New tasks can be extended through the modular architecture (requires corresponding problem structure design).
@@ -112,10 +116,10 @@ Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json for
 ## Contact Information
 
 **Company:** Quantum Alpha Technology Co., Ltd.
+
 **Author:** Jahua Chang
-**Release Date:** July 19, 2026
-**Status:** Public Proof of Concept Release
-**Email:** jahua@quantum-alpha.tech
+
+**Email**: jahua@quantum-alpha.tech
 
 * * *
 
@@ -127,7 +131,10 @@ Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json for
 
 # Universal Optimization Engine (QαT) - POC v1.0（中文版）
 
-**公司**：量子阿爾法科技有限公司 (Quantum Alpha Technology Co., Ltd.)**作者**：張家華 (Jahua Chang)**發布日期**：2026年7月19日**狀態**：公開 POC 發布版本
+**公司**：量子阿爾法科技有限公司 (Quantum Alpha Technology Co., Ltd.)
+**作者**：張家華 (Jahua Chang)
+**發布日期**：2026年7月19日
+**狀態**：公開 POC 發布版本
 
 ## 項目概述
 
@@ -149,7 +156,7 @@ Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json for
   * 具體為：B03（25 個 terminals）、B08（19T）、B09（38T）、B18（50T）均在國際標準測試中命中官方最優解
   * 高終端密度實例表現突出（C05 +2.4%、C10 +3.5%）
 * **三模式架構**：單一核心同時支援望小、望大、平衡模式
-* **問題涵蓋**：46 種以上不同類型的優化任務
+* **問題涵蓋**：47 種以上不同類型的優化任務——當前數量反映的是驗證工作量，而非架構容量
 * **資源效率**：單核、低功耗、<6GB 記憶體
 * **可驗證性**：每個解皆包含 SHA-256 + Ed25519 數位簽章
 * **可重現性**：固定 Seed=42 即可 100% 重現
@@ -185,9 +192,9 @@ QαT 從設計之初即以未來硬體對應為目標。約 10,000 行的精簡�
 
 本 POC 證明了在嚴格的單核與低記憶體限制下，仍可處理多種 NP-hard 問題結構——這是探索無 GPU、面向邊緣裝置的優化硬體時，必要的軟體基礎。
 
-## 支援任務列表（46+）
+## 支援任務列表（47+）
 
-目前已支援 46 種問題類型，涵蓋多個領域：
+目前已支援 47 種以上問題類型，涵蓋多個領域。當前數量反映的是驗證覆蓋範圍，而非引擎的架構上限。新任務類型可透過模組化結構設計加入，無需重寫核心。
 
 **已建立完整驗證流程的任務**：
 
@@ -201,6 +208,7 @@ QαT 從設計之初即以未來硬體對應為目標。約 10,000 行的精簡�
 * 組合優化（TSP、Knapsack、Job Shop、Cutting Stock、VRP、QAP）
 * 網路與路由（Network Topology、Supply Chain、Smart Grid）
 * 工程應用（Robot Kinematics、Thermal Dissipation）
+* 動態約束下的緊急運動規劃（autonomous_emergency_motion）
 * 新興領域（Zero-Knowledge Proof Circuit、Post-Quantum Crypto 等）
 
 新任務可透過模組化架構進行擴展（需對應問題結構設計）。
@@ -244,11 +252,7 @@ QαT 從設計之初即以未來硬體對應為目標。約 10,000 行的精簡�
 
 **技術聯絡人**：張家華（Jahua Chang）
 
-**Release Date:** July 19, 2026
-
-**Status:** Public Proof of Concept Release
-
-**Email:** jahua@quantum-alpha.tech
+**Email**: jahua@quantum-alpha.tech
 
 * * *
 
