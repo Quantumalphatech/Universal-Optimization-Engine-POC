@@ -1,4 +1,4 @@
-# Universal Optimization Engine (QαT) - POC v1.0
+# Universal Optimization Engine (QαT) - POC v1.1.0
 
 **Company:** Quantum Alpha Technology Co., Ltd.
 **Author:** Jahua Chang 
@@ -60,6 +60,22 @@ Its core development and execution flow does not rely on GPU acceleration, comme
 QαT was designed from the outset with future hardware mapping in mind. The compact ~10,000-line structure, binary solution encoding, and deterministic rule-based evaluation are intentionally chosen to facilitate potential translation into logic circuits or dedicated accelerators (FPGA / ASIC).
 
 This POC demonstrates that a wide range of NP-hard problem structures can be handled under strict single-core and low-memory constraints — a necessary foundation for exploring GPU-free, edge-oriented optimization hardware.
+
+## Complementing AI with a Deterministic Layer  
+
+This POC is designed to complement generative AI, not replace it.
+
+AI is strong at open-ended interpretation (reading JSON or context, filling fields, proposing candidate encodings). It is weaker at identical reruns, hard constraint satisfaction, and independently verifiable outputs.
+
+The intended pattern is:
+
+**AI proposes → the deterministic engine searches under constraints → a hard gate (`true_conflicts = 0`) accepts or rejects → SHA-256 + Ed25519 signs what actually ran.**
+
+This improves system-level reproducibility and constraint reliability. It does not claim that the model itself understands the world, or that a feasible in-model solution equals production safety.
+
+If a future Optimization Processing Unit (OPU) is implemented in silicon, the same contract can continue: software remains the proposal layer; the engine/OPU remains the closed, verifiable decision layer.
+
+See `HYBRID_DECISION_ARCHITECTURE.md` for the full explanation.
 
 ## Supported Tasks (47+)
 
@@ -129,7 +145,7 @@ Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json for
 
 * * *
 
-# Universal Optimization Engine (QαT) - POC v1.0（中文版）
+# Universal Optimization Engine (QαT) - POC v1.1.0（中文版）
 
 **公司**：量子阿爾法科技有限公司 (Quantum Alpha Technology Co., Ltd.)
 **作者**：張家華 (Jahua Chang)
@@ -191,6 +207,22 @@ Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json for
 QαT 從設計之初即以未來硬體對應為目標。約 10,000 行的精簡結構、二進位解編碼，以及確定性的規則導向評估，都是為了讓後續轉換成邏輯電路或專用加速器（FPGA / ASIC）更為可行。
 
 本 POC 證明了在嚴格的單核與低記憶體限制下，仍可處理多種 NP-hard 問題結構——這是探索無 GPU、面向邊緣裝置的優化硬體時，必要的軟體基礎。
+
+## 以確定性層補足 AI
+
+本 POC 的設計是補足生成式 AI，而不是取代它。
+
+AI 擅長開放端理解（讀取 JSON 或上下文、補齊欄位、提出候選編碼）。它較弱的是：同樣輸入能否重現、硬約束能否守住、結果能否獨立驗證。
+
+預定結合方式是：
+
+**AI 提案 → 確定性引擎在約束下搜尋 → 以 `true_conflicts = 0` 作為硬閘門決定接受或拒絕 → 以 SHA-256 + Ed25519 證明這次實際跑出什麼。**
+
+這提升的是系統層的再現性與硬約束可靠性。它不宣稱模型本身已理解真實世界，也不把「模型內可行解」等同於產業安全解。
+
+若未來 Optimization Processing Unit（OPU）做成矽晶，同一契約可以延續：軟體仍負責提案，引擎／OPU 仍負責封閉、可驗證的決策。
+
+完整說明見 `HYBRID_DECISION_ARCHITECTURE.md`。
 
 ## 支援任務列表（47+）
 
