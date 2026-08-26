@@ -1,4 +1,4 @@
-# Universal Optimization Engine (QαT) - POC v1.0
+# Universal Optimization Engine (QαT) - POC v1.1.1
 
 **Company:** Quantum Alpha Technology Co., Ltd.
 **Author:** Jahua Chang 
@@ -162,7 +162,7 @@ See `LICENSE.md` for the evaluation-use terms that apply to this public release.
 
 * * *
 
-# Universal Optimization Engine (QαT) - POC v1.0（中文版）
+# Universal Optimization Engine (QαT) - POC v1.1.1（中文版）
 
 **公司**：量子阿爾法科技有限公司 (Quantum Alpha Technology Co., Ltd.)
 **作者**：張家華 (Jahua Chang)
