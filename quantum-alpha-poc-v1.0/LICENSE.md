@@ -21,6 +21,9 @@ This package is a **Proof of Concept (POC)** released solely for the purposes of
 
 It is **not** a commercial product license, and it does **not** grant any right to use the core algorithm in production systems, commercial services, or derivative commercial products.
 
+**Preferred commercial model:** global exclusive licensing, to be negotiated under a separate formal written agreement.  
+Any commercial use, production deployment, or transfer of rights requires prior written authorization from Quantum Alpha Technology Co., Ltd. This POC release itself does not constitute any commercial grant.
+
 ### 2. Trade Secret Protection
 
 The core optimization algorithm, search logic, internal operators, and related technical methods embodied in or underlying this POC are the **exclusive trade secrets** and proprietary intellectual property of Quantum Alpha Technology Co., Ltd.
@@ -73,6 +76,8 @@ For licensing inquiries, partnership discussions, or authorization requests:
 Technical Contact: Jahua Chang  
 Email: jahua@quantum-alpha.tech
 
+Serious commercial discussions typically proceed under NDA before deeper evaluation materials are shared.
+
 ---
 
 ---
@@ -97,6 +102,9 @@ Email: jahua@quantum-alpha.tech
 - 學術或研究討論
 
 本發布**不構成**商業產品授權，亦**不授予**將核心演算法用於生產系統、商業服務或衍生商業產品之任何權利。
+
+**偏好之商業模式：** 全球獨家授權，須另以正式書面協議洽談。  
+任何商業使用、生產部署或權利移轉，均須事先取得量子阿爾法科技有限公司之書面授權。本 POC 發布本身不構成任何商業授權之授予。
 
 ### 2. 商業秘密保護
 
@@ -149,6 +157,8 @@ Email: jahua@quantum-alpha.tech
 **量子阿爾法科技有限公司**  
 技術聯絡人：張家華（Jahua Chang）  
 Email: jahua@quantum-alpha.tech
+
+正式商業討論通常在簽署 NDA 後，才提供更深入的評估資料。
 
 ---
 
