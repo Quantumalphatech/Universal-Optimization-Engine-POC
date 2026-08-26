@@ -129,6 +129,23 @@ Watch unedited 14-minute single-core execution of SteinLib B01 (.stp & .json for
 
 *Single-core CPU monitoring, execution logs, and Ed25519 verified output shown in real time.*
 
+## Commercial & Licensing
+
+This public package is an **evaluation-stage Proof of Concept**.
+It is released for technical assessment, independent verification of signed results, and research discussion only.
+
+The core algorithm and internal search logic are protected as **trade secrets** of Quantum Alpha Technology Co., Ltd.
+This repository does **not** grant rights to use the core engine in commercial products, services, or production systems.
+
+**Preferred commercial model:** global exclusive licensing, to be negotiated under a formal written agreement.
+Other structures (if any) would also require prior written authorization.
+
+For licensing or partnership inquiries:
+- Email: jahua@quantum-alpha.tech
+- Serious commercial discussions typically proceed under NDA before deeper materials are shared.
+
+See `LICENSE.md` for the evaluation-use terms that apply to this public release.
+
 ## Contact Information
 
 **Company:** Quantum Alpha Technology Co., Ltd.
@@ -277,6 +294,23 @@ AI 擅長開放端理解（讀取 JSON 或上下文、補齊欄位、提出候�
 ](https://youtu.be/vsg6ljJ2U2M)
 
 *即時顯示單核心 CPU 監控、執行日誌以及 Ed25519 驗證的輸出結果。 *
+
+## 商業與授權
+
+本公開包為**評估階段概念驗證（POC）**。
+僅供技術評估、已簽章結果的獨立驗證，以及研究討論使用。
+
+核心演算法與內部搜尋邏輯為量子阿爾法科技有限公司之**商業秘密**。
+本儲存庫**不授予**將核心引擎用於商業產品、服務或生產系統的權利。
+
+**偏好的商業模式：** 全球獨家授權，須以正式書面協議另行洽談。
+其他形式的使用（如有）亦須事先取得書面授權。
+
+授權或合作洽詢：
+- Email: jahua@quantum-alpha.tech
+- 正式商業討論通常在簽署 NDA 後，才提供更深入的評估資料。
+
+公開包的評估用途條款見 `LICENSE.md`。
 
 ## 聯絡資訊
 
