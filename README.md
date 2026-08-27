@@ -16,7 +16,7 @@ Key design principles:
 * **Three optimization modes**: Minimization, Maximization, and Balance
 * **Hardware-friendly**: Designed for future logic circuit and ASIC implementation
 
-The entire engine naturally evolved to approximately **10,000 lines** during development, making it easy to maintain, optimize, and adapt.
+The current reference implementation is about 11,000 lines of logic (~15,000 physical lines including blanks and comments). This scale formed during development rather than being trimmed for presentation, and remains compact enough to maintain, audit, and adapt.
 
 ## Core Achievements
 
@@ -57,7 +57,8 @@ Its core development and execution flow does not rely on GPU acceleration, comme
 
 ## Hardware Orientation
 
-QαT was designed from the outset with future hardware mapping in mind. The compact ~10,000-line structure, binary solution encoding, and deterministic rule-based evaluation are intentionally chosen to facilitate potential translation into logic circuits or dedicated accelerators (FPGA / ASIC).
+QαT was designed from the outset with future hardware mapping in mind.
+The compact ~11,000-line logical structure, binary solution encoding, and deterministic rule-based evaluation are intentionally chosen to facilitate potential translation into logic circuits or dedicated accelerators (FPGA / ASIC).
 
 This POC demonstrates that a wide range of NP-hard problem structures can be handled under strict single-core and low-memory constraints — a necessary foundation for exploring GPU-free, edge-oriented optimization hardware.
 
@@ -100,7 +101,7 @@ New tasks can be extended through the modular architecture (requires correspondi
 
 ## Key Advantages
 
-* **Compact Codebase**: Approximately 10,000 lines — easy to maintain and optimize
+* **Compact Codebase**: About 11,000 lines of logic (~15,000 physical lines) — easy to maintain, audit, and optimize
 * **Low Power Consumption**: Efficient single-core design suitable for edge devices
 * **Absolute Reproducibility**: 100% deterministic execution (fixed Seed=42)
 * **Cryptographic Verifiability**: SHA-256 + Ed25519 signatures for every result
@@ -180,7 +181,7 @@ See `LICENSE.md` for the evaluation-use terms that apply to this public release.
 * **三種優化模式**：望小、望大、平衡
 * **硬體友善**：從設計之初即考慮邏輯電路與 ASIC 實作
 
-整個引擎在開發過程中自然形成約 **10,000 行** 的規模，便於維護、優化與後續開發。
+目前 reference implementation 約 1.1 萬行有效邏輯（含空行與註解約 1.5 萬實體行）。此規模是開發過程自然形成，而非為了展示而刻意刪減，仍足以維持精簡、可審核與可擴充。
 
 ## 核心成就
 
@@ -221,7 +222,8 @@ See `LICENSE.md` for the evaluation-use terms that apply to this public release.
 
 ## 硬體導向設計
 
-QαT 從設計之初即以未來硬體對應為目標。約 10,000 行的精簡結構、二進位解編碼，以及確定性的規則導向評估，都是為了讓後續轉換成邏輯電路或專用加速器（FPGA / ASIC）更為可行。
+QαT 從設計之初即以未來硬體對應為目標。
+約 1.1 萬行有效邏輯的精簡結構、二進位解編碼，以及確定性的規則導向評估，都是為了讓後續轉換成邏輯電路或專用加速器（FPGA / ASIC）更為可行。
 
 本 POC 證明了在嚴格的單核與低記憶體限制下，仍可處理多種 NP-hard 問題結構——這是探索無 GPU、面向邊緣裝置的優化硬體時，必要的軟體基礎。
 
@@ -264,7 +266,7 @@ AI 擅長開放端理解（讀取 JSON 或上下文、補齊欄位、提出候�
 
 ## 核心優勢
 
-* **精簡程式碼**：約 10,000 行，便於維護與優化
+* **精簡程式碼**：約 1.1 萬行有效邏輯（含空行與註解約 1.5 萬實體行），便於維護、審核與優化
 * **低功耗設計**：單核高效運行，適合邊緣裝置
 * **絕對可再現性**：固定 Seed=42，100% 確定性
 * **密碼學可驗證**：每個結果皆有 SHA-256 + Ed25519 簽章
