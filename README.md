@@ -62,6 +62,18 @@ The compact ~11,000-line logical structure, binary solution encoding, and determ
 
 This POC demonstrates that a wide range of NP-hard problem structures can be handled under strict single-core and low-memory constraints — a necessary foundation for exploring GPU-free, edge-oriented optimization hardware.
 
+## Core + Task Modules
+
+The engine is not 47 separate solvers.
+It is one core plus task modules.
+
+Validated task count is coverage, not product SKUs.
+A future hardware mapping is intended to implement a selected configuration
+(Core + required modules), not every validated task on every chip.
+
+Changing a configuration may still require hardware synthesis work.
+It should not require redesigning the core search architecture.
+
 ## Complementing AI with a Deterministic Layer  
 
 This POC is designed to complement generative AI, not replace it.
@@ -226,6 +238,18 @@ QαT 從設計之初即以未來硬體對應為目標。
 約 1.1 萬行有效邏輯的精簡結構、二進位解編碼，以及確定性的規則導向評估，都是為了讓後續轉換成邏輯電路或專用加速器（FPGA / ASIC）更為可行。
 
 本 POC 證明了在嚴格的單核與低記憶體限制下，仍可處理多種 NP-hard 問題結構——這是探索無 GPU、面向邊緣裝置的優化硬體時，必要的軟體基礎。
+
+## 核心 + 任務模組
+
+引擎不是 47 個獨立求解器，
+而是一個核心加上任務模組。
+
+已驗證任務數是覆蓋範圍，不是產品料號。
+未來若對應硬體，預定實現的是選定組態
+（核心 + 所需模組），不是每顆晶片都載入全部任務。
+
+組態改變時，硬體端仍可能要重新做 synthesis。
+這不等於核心搜尋架構需要重寫。
 
 ## 以確定性層補足 AI
 
