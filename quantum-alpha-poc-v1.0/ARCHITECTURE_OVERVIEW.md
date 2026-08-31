@@ -1,6 +1,6 @@
 # Architecture Overview
 
-**Universal Optimization Engine (QαT) - POC v1.0**
+**Universal Optimization Engine (QαT) - POC v1.1.1**
 
 ## Three-Layer Design
 
@@ -9,7 +9,7 @@ The engine adopts a clean, modular three-layer architecture that balances high g
 ### 1. Core Engine Layer (Problem-Agnostic)
 
 - Unified evolutionary search logic
-- Shared protection and feasibility mechanisms (`true_conflicts = 0` guarantee)
+- Shared protection and feasibility mechanisms (`true_conflicts = 0` gu  arantee)
 - Common optimization strategies supporting three fundamental modes
 - Three-mode support: Minimization, Maximization, and Balance
 
@@ -26,9 +26,34 @@ The engine adopts a clean, modular three-layer architecture that balances high g
 - GUI verifier and command-line tools
 - Deterministic execution with fixed seeds
 
-**Total codebase size**: Approximately **10,000 lines** — naturally evolved during development, making it easy to maintain, optimize, and adapt for future hardware implementation.
+**Total codebase size**: About **11,000 lines of logic** (~15,000 physical lines including blanks and comments) — naturally evolved during development, making it easy to maintain, optimize, and adapt for future hardware implementation.
 
-This layered design enables the same core to handle 46+ diverse tasks while keeping the internal logic clean and extensible.
+This layered design enables the same core to handle 47+ diverse tasks while keeping the internal logic clean and extensible.
+
+## Core + Composable Task Modules
+
+The engine is not 47 separate solvers. It is one core plus task modules.
+
+              Core A
+                 |
+        +--------+--------+
+        |        |        |
+      modules  modules  modules
+      (subset) (subset) (subset)
+        |        |        |
+      config   config   config
+        |        |        |
+      FPGA     ASIC    RISC-V
+
+The diagram is illustrative. It does not represent public SKUs or a numbered module catalog.
+
+* Validated task count is **coverage**, not product count.
+* A future hardware mapping is intended to implement a **selected configuration** (Core + required modules), not every validated task on every chip.
+* Intended form: `Core A + {selected modules}`not: `Solver_1 + Solver_2 + … + Solver_n`
+* Changing a configuration may still require hardware synthesis, area, memory, and timing work.
+* That is **not** the same as rewriting the core search architecture.
+
+The core does not scale by becoming a larger solver.It scales by composing more capabilities around the same computational core.
 
 ## Why Suitable for Circuit Implementation
 
@@ -64,7 +89,7 @@ QαT provides a **unified, compact, low-power, verifiable, and hardware-friendly
 
 # 架構簡介（中文版）
 
-**通用優化引擎 (QαT) - POC v1.0**
+**通用優化引擎 (QαT) - POC v1.1.1**
 
 ## 三層架構設計
 
@@ -90,9 +115,34 @@ QαT provides a **unified, compact, low-power, verifiable, and hardware-friendly
 - GUI 驗證工具與指令列工具
 - 確定性執行（固定 Seed）
 
-**總程式碼規模**：約 **10,000 行** —— 在開發過程中自然形成，便於維護、優化與硬體實作。
+**總程式碼規模**：約 **1.1 萬行有效邏輯**（含空行與註解約 1.5 萬實體行）—— 在開發過程中自然形成，便於維護、優化與硬體實作。
 
-這種分層設計讓同一個核心能夠處理 46 種以上不同任務，同時保持內部邏輯的乾淨與可擴展性。
+這種分層設計讓同一個核心能夠處理 47 種以上不同任務，同時保持內部邏輯的乾淨與可擴展性。
+
+## 核心 + 可組合任務模組
+
+引擎不是 47 個獨立求解器，而是一個核心加上任務模組。
+
+              核心 A
+                 |
+        +--------+--------+
+        |        |        |
+       模組     模組     模組
+      （子集）  （子集）  （子集）
+        |        |        |
+       組態     組態     組態
+        |        |        |
+      FPGA     ASIC    RISC-V
+
+上圖為結構示意，不是公開料號，也不是模組編號表。
+
+* 已驗證任務數是**覆蓋範圍**，不是產品數量。
+* 未來若對應硬體，預定實現的是**選定組態**（核心 + 所需模組），不是每顆晶片都載入全部任務。
+* 預定形式：`核心 A + {選用模組}`而不是：`Solver_1 + Solver_2 + … + Solver_n`
+* 組態改變時，硬體端仍可能要做 synthesis、面積、記憶體與時序。
+* 這**不等於**核心搜尋架構需要重寫。
+
+核心的擴展，不是把自己變成更大的 solver，而是在同一計算核心外圍組合更多能力模組。
 
 ## 為什麼適合電路化實作
 
