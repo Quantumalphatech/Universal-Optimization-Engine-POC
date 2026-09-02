@@ -104,7 +104,9 @@ The engine currently supports 47+ problem types across multiple domains. The cur
 **Other Supported Domains**:
 
 * Combinatorial Optimization (TSP, Knapsack, Job Shop, Cutting Stock, VRP, QAP)
-* Additional CVRP baseline: CVRPLIB A & B, 50/50 instances — see CVRPLIB_AB_BASELINE.md (POC baseline, not a commercial VRP comparison)
+* Additional CVRP results on CVRPLIB A & B benchmark instances (50/50):
+  POC baseline — see `CVRPLIB_AB_BASELINE.md`
+  (standard international instances; not a commercial VRP solver comparison)
 * Network & Routing (Network Topology, Supply Chain, Smart Grid)
 * Engineering Applications (Robot Kinematics, Thermal Dissipation)
 * Autonomous Systems (Emergency motion planning under dynamic constraints)
