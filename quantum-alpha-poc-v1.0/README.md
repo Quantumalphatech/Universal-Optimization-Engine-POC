@@ -104,7 +104,9 @@ The engine currently supports 47+ problem types across multiple domains. The cur
 **Other Supported Domains**:
 
 * Combinatorial Optimization (TSP, Knapsack, Job Shop, Cutting Stock, VRP, QAP)
-* Additional CVRP baseline: CVRPLIB A & B, 50/50 instances — see `CVRPLIB_AB_BASELINE.md` (POC baseline, not a commercial VRP comparison)
+* Additional CVRP results on CVRPLIB A & B benchmark instances (50/50):
+  POC baseline — see `CVRPLIB_AB_BASELINE.md`
+  (standard international instances; not a commercial VRP solver comparison)
 * Network & Routing (Network Topology, Supply Chain, Smart Grid)
 * Engineering Applications (Robot Kinematics, Thermal Dissipation)
 * Autonomous Systems (Emergency motion planning under dynamic constraints)
@@ -282,7 +284,9 @@ AI 擅長開放端理解（讀取 JSON 或上下文、補齊欄位、提出候�
 **其他支援領域**：
 
 * 組合優化（TSP、Knapsack、Job Shop、Cutting Stock、VRP、QAP）
-* 另有 CVRP 基準：CVRPLIB A & B，50/50 題，見 `CVRPLIB_AB_BASELINE.md`（POC 基準，非商用 VRP 比較）
+* 另於 CVRPLIB A & B 國際標準測試集公布 CVRP 結果（50/50）：
+  POC 基準成績，見 `CVRPLIB_AB_BASELINE.md`
+  （題庫為國際公認實例；非商用 VRP 求解器比較）
 * 網路與路由（Network Topology、Supply Chain、Smart Grid）
 * 工程應用（Robot Kinematics、Thermal Dissipation）
 * 動態約束下的緊急運動規劃（autonomous_emergency_motion）
