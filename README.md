@@ -74,6 +74,14 @@ A future hardware mapping is intended to implement a selected configuration
 Changing a configuration may still require hardware synthesis work.
 It should not require redesigning the core search architecture.
 
+## Architecture: Single-Core, Multi-Task, Scalable
+
+QαT operates on a single universal core. Once a task completes, the core immediately switches to the next — no restart, no reconfiguration, no reloading. This has been validated across 47+ NP-hard problem types in the public POC.
+
+The single-core design inherently supports both parallel (replication for simultaneous multi-task throughput) and serial (pipeline for multi-stage deterministic decision chains) scaling. These are not theoretical extensions — they are natural properties of the existing architecture: the core is stateless and self-contained, making replication trivial; the solve pipeline is sequential by design, making chaining direct.
+
+Multi-chip latency characterization is an engineering-phase measurement to be conducted during silicon implementation.
+
 ## Complementing AI with a Deterministic Layer  
 
 This POC is designed to complement generative AI, not replace it.
@@ -253,6 +261,14 @@ QαT 從設計之初即以未來硬體對應為目標。
 
 組態改變時，硬體端仍可能要重新做 synthesis。
 這不等於核心搜尋架構需要重寫。
+
+## 架構：單一核心、多任務、可擴展
+
+QαT 基於單一通用核心運作。任務完成後，核心立即切換至下一任務 — 無須重啟、無須重構、無須重新載入。此能力已在公開 POC 的 47+ 種 NP-hard 問題類型上完整驗證。
+
+單一核心設計天生支援並聯（複製核心以實現同時多任務吞吐）與串聯（管線化以實現多階段確定性決策鏈）擴展。這不是理論上的延伸 — 而是現有架構的自然屬性：核心無狀態且自包含，複製即並聯；求解管線本身即為序列式設計，串接即串聯。
+
+多晶片管線延遲量測屬矽片實作階段的工程任務。
 
 ## 以確定性層補足 AI
 
